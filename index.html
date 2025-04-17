@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portioner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Portioner</h1>
+
+    <label>Avdelning:
+        <select id="department">
+            <option value="Orrholmens FSK">Orrholmens FSK</option>
+            <option value="Duvkullan FSK">Duvkullan FSK</option>
+            <option value="Karolina FSK">Karolina FSK</option>
+            <option value="Omega FSK">Omega FSK</option>
+            <option value="Nobella FSK">Nobella FSK</option>
+        </select>
+    </label><br><br>
+
+    <label>Maträtt:
+        <select id="dish">
+            <option value="potatis">Råvara - Potatis</option>
+            <option value="pasta">Råvara - Pasta</option>
+            <option value="ris">Råvara - Ris</option>
+            <option value="kyckling">Råvara - Kyckling utan ben</option>
+            <option value="köttfärs">Råvara- Köttfärs</option>
+            <option value="fisk">Råvara - Fisk</option>
+            <option value="fisk-kokt">Fisk kokt, ugnsstekt</option>
+            <option value="fisk-stekt">Fisk panerad, stekt</option>
+            <option value="fiskgratäng">Fiskgratäng</option>
+            <option value="fiskpudding">Fiskpudding</option>
+            <option value="fiskbullar">Fiskbullar</option>
+            <option value="kyckling-hel">Kyckling, helt kött</option>
+            <option value="köttfärssås">Köttfärssås</option>
+            <option value="köttgryta">Gryta, kött/korv/kyckling m. grönsaker</option>
+            <option value="chili">Chili con carne</option>
+            <option value="pyttipanna">Pytt i panna</option>
+            <option value="lasagne">Lasagne</option>
+            <option value="pannkaka">Pannkaka, huvudrätt</option>
+            <option value="soppa">Soppa</option>
+            <option value="potatismos">Potatismos</option>
+        </select>
+    </label><br><br>
+
+    <label>Barn:
+        <input type="number" id="barn">
+    </label><br><br>
+
+    <label>Vuxna:
+        <input type="number" id="vuxna">
+    </label><br><br>
+
+    <button type="button" id="calculateButton" onclick="calculatePortions()">Räkna</button>
+    <button type="button" id="clearButton" onclick="clearResults()">Radera</button>
+    
+    <div id="results"></div>
+    <div id="totalResult">
+        <h3>Total Mängd:</h3>
+        <p id="totalAmount">0 grams</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
