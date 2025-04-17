@@ -72,7 +72,7 @@ function calculatePortions() {
 
 function clearResults() {
     document.getElementById('results').innerHTML = ''; // Clear results
-    document.getElementById('totalAmount').innerText = '0 grams'; // Reset total
+    document.getElementById('totalAmount').innerText = '0 gram'; // Reset total
     totalGrams = 0; // Reset running total
     kitchenCount = 0; // Reset kitchen count
 }
