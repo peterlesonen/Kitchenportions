@@ -57,11 +57,11 @@ function calculatePortions() {
     const resultsDiv = document.getElementById('results');
     const resultHTML = `
         <div>
-            <h3>Result for Department: ${department}</h3>
-            <p><strong>Dish:</strong> ${dish.charAt(0).toUpperCase() + dish.slice(1)}</p>
+            <h3>Mängd per FSK: ${department}</h3>
+            <p><strong>Maträtt:</strong> ${dish.charAt(0).toUpperCase() + dish.slice(1)}</p>
             <p>Barn: ${barn} × ${selectedDish.barn}g = <strong>${barnTotal}g</strong></p>
             <p>Vuxna: ${vuxna} × ${selectedDish.vuxna}g = <strong>${vuxnaTotal}g</strong></p>
-            <p><strong>Total Amount:</strong> ${total} grams</p>
+            <p><strong>Total Mängd:</strong> ${total} grams</p>
         </div>
         <hr>
     `;
