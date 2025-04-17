@@ -61,7 +61,7 @@ function calculatePortions() {
             <p><strong>Maträtt:</strong> ${dish.charAt(0).toUpperCase() + dish.slice(1)}</p>
             <p>Barn: ${barn} × ${selectedDish.barn}g = <strong>${barnTotal}g</strong></p>
             <p>Vuxna: ${vuxna} × ${selectedDish.vuxna}g = <strong>${vuxnaTotal}g</strong></p>
-            <p><strong>Total Mängd:</strong> ${total} grams</p>
+            <p><strong>Total Mängd:</strong> ${total} gram</p>
         </div>
         <hr>
     `;
