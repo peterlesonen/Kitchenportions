@@ -1,25 +1,180 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-    background-color: #f4f4f4;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  form {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  #result {
-    margin-top: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 6px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  }
+  font-family: sans-serif; /* Choose a clean, readable sans-serif font like Open Sans, Lato, or Roboto */
+  padding: 40px 20px; /* Increase vertical padding and keep horizontal padding */
+  max-width: 960px; /* Increase the maximum width for better readability on larger screens */
+  margin: 40px auto; /* Center the content with more top/bottom margin for visual breathing room */
+  background-color: #f0f8ff; /* Use a light blue/gray background */
+  color: #333; /* Dark gray text for better contrast on the light background */
+  line-height: 1.6; /* Improve readability of body text */
+}
+
+h1 {
+  color: #333; /* Keep heading color dark */
+  font-size: 2.5em; /* Slightly larger heading */
+  margin-bottom: 0.8em;
+  text-align: center; /* Center the main heading */
+}
+
+form {
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block; /* Make labels take full width */
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels slightly bolder */
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light gray border for input fields */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+button {
+  background-color: #FFD700; /* Primary yellow for buttons */
+  color: #fff; /* White text on yellow */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #e6c000; /* Darker yellow on hover */
+}
+
+#results {
+  margin-top: 30px;
+  background-color: #fff; /* White background for results */
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for results */
+  color: #333;
+  border: 1px solid #eee; /* Light gray border for results */
+}
+
+#results h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+#totalResult {
+  margin-top: 20px;
+  background-color: #fff; /* White background for total result */
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for total result */
+  color: #333;
+  border: 1px solid #eee; /* Light gray border for total result */
+}
+
+hr {
+  border-color: #ccc; /* Light gray for horizontal rule */
+  margin: 20px 0;
+}
+
+/* --- Additional Styles for Karlstad Inspiration --- */
+
+/* Consider a header with a logo and navigation */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700; /* Yellow on hover for navigation links */
+}
+
+/* If you want a banner image */
+.banner {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  background-image: url('your-karlstad-like-image.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text on the banner */
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Style for quick links/buttons below the banner */
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.quick-link-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.quick-link-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.quick-link-button i { /* For icons (e.g., using Font Awesome) */
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #FFD700; /* Yellow for icons */
+}
+
+.quick-link-button span {
+  text-align: center;
+}
