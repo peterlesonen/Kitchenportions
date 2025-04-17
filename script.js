@@ -67,7 +67,7 @@ function calculatePortions() {
     `;
     resultsDiv.insertAdjacentHTML('beforeend', resultHTML);
 
-    document.getElementById('totalAmount').innerText = `${totalGrams} grams`;
+    document.getElementById('totalAmount').innerText = `${totalGrams} gram`;
 }
 
 function clearResults() {
